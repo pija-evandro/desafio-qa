@@ -10,7 +10,6 @@ class AlertsPage {
   }
 
   validateNewWindowMessage() {
-    // Verifica se o texto existe na nova página carregada
     cy.get('#sampleHeading').should('be.visible').and('have.text', 'This is a sample page');
   }
 }

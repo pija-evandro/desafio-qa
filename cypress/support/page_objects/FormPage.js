@@ -13,7 +13,6 @@ class FormPage {
     cy.get('[value="Male"]').click({ force: true });
     cy.get('#userNumber').type(user.phone);
     
-    // Upload do arquivo (deve estar em cypress/fixtures/example.txt)
     cy.get('#uploadPicture').selectFile('cypress/fixtures/example.txt');
     
     cy.get('#currentAddress').type('Endereço de teste aleatório');

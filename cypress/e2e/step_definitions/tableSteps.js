@@ -14,12 +14,9 @@ Then('deleto o registro editado', () => {
 });
 
 When('eu crio os seguintes registros de uma vez:', (tabela) => {
-  // Transforma a tabela do Gherkin em uma lista de objetos JS
   const dados = tabela.hashes(); 
 
-  // Para cada linha da tabela, ele executa a criação
   dados.forEach((usuario) => {
-    // Chama o seu Page Object
     TablePage.fillRecordForm({ 
       nome: usuario.nome, 
       email: usuario.email, 
