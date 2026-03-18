@@ -10,6 +10,8 @@ module.exports = defineConfig({
     },
     specPattern: "cypress/e2e/features/*.feature",
     env: {
+      stepDefinitions: [
+        "cypress/e2e/step_definitions/*.{js,ts}"],
       TAGS: "",
       filterSpecs: true,
       omitFiltered: true
